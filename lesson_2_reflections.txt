@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A hidden folder called .git is created, this is the repository, we can visualize it with ls -a. This Folder will contain specific files from git. 
+We use the command git init. We need it to create our commits.
+
