@@ -8,7 +8,7 @@ find it quickley by using "diff".
 
 How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 
-You can acces to differents versions of a file under the same
+You can acces to different versions of a file under the same
 name. It's less confused to look at the right version. If we modify the file several times, it's convenient to save all the possible versions.
 
 What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
@@ -29,5 +29,7 @@ the commits, scroll down, and copy de name of the commits to
 compare. git diff commit1 commit2 
 
 Now that you have your workspace set up, what do you want to try using Git for?
+I would deffinetely use it for my final project. It's helpful to keep organized
+as well as to have a copy on the cloud.
 
 For sure!!
