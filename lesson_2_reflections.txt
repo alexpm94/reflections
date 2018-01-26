@@ -1,6 +1,7 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-A hidden folder called .git is created, this is the repository, we can visualize it with ls -a. This Folder will contain specific files from git. 
+A hidden folder called .git is created, this is the repository, we can visualize it with ls -a. 
+This Folder will contain specific files from git. 
 We use the command git init. We need it to create our commits.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
@@ -8,3 +9,38 @@ How is the staging area different from the working directory and the repository?
 In the working repository we can find the current version files.
 In the repository we can find the commits so that we can check the old ones.
 Staging area allow us to select a bunch of files to update in the same commit.
+If we added accidenttally a file to the satging area, we can remove it with git reset.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+we can compare the staging area with the commit1 form the repository. Using the command git diff --staged.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When creating a new version of the project (Beta, Language translation, etc.)
+
+
+
+In general, it’s very common that if you make a branch, either an experimental branch or to work on a new feature, you want to periodically merge master into that branch. This is because master usually contains the official version of the code, and it’s common to want experimental changes to include all of the changes to master.
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help us to see what commits are in some branches, so we can see if a commit is reachable or not.
+git log --graph --oneline branch1 branch2
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The merging process add and remove the code as it was modified.
+Is an excellent option if 2 or more colleagues are working on
+independent tasks but that should work in the same code.
+We represent them in the diagram to see the parents of the commits.
+If we just run git log, we will see the commits by time order, not by sequential process.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros: It joins the code easily
+		When it cannot, it tells you about it
+Crons: We should take a couple of minutes to see the changes that were made.
+
