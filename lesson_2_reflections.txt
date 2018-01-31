@@ -14,15 +14,15 @@ If we added accidenttally a file to the satging area, we can remove it with git 
 How can you use the staging area to make sure you have one commit per logical change?
 
 we can compare the staging area with the commit1 form the repository. Using the command git diff --staged.
+If we want to compare de staging area with the working repository, we should use the command git diff.
+IMPORTANT!!! Use git checkout master to return to the last version.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 When creating a new version of the project (Beta, Language translation, etc.)
 
 
-
 In general, it’s very common that if you make a branch, either an experimental branch or to work on a new feature, you want to periodically merge master into that branch. This is because master usually contains the official version of the code, and it’s common to want experimental changes to include all of the changes to master.
-
 
 
 How do the diagrams help you visualize the branch structure?
