@@ -3,6 +3,11 @@ When would you want to use a remote repository rather than keeping all your work
 Whenever i am working on a collaboratif project. Where all the 
 team could interact with the files.
 
+To create a new repo in GitHub, we have to follow the next
+steps:
+1. Create a remote:  git remote add origin URL
+2. Push the commits: git push origin master
+
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
