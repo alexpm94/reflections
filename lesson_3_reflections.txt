@@ -11,9 +11,12 @@ steps:
 To add collaborators on github:
 Go to the settings in the repo, then collaborator, add.
 
-Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Why might you want to always pull changes manually rather than having 
+Git automatically stay up-to-date with your remote repository?
 
-'JUST TASTING IN 2018'
+Whenever a collaborator is working on the same file than i do is a good
+idea to do it manually, because it could cause conflicts or confusion
+while working on the project.
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
@@ -51,4 +54,35 @@ PULL REQUEST.
 -Push the new branch into the remote.
 -Create a pull request on GitHub.
 
-How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+I would collaborate usin a different control version tool as drive or dropbox.
+With drive is much more easy if we're working on the same file, so google
+drive or office online is a good option. During the course "inversion projects",
+i worked using online excel and it was super dynamic and easy to get and give
+the needed results to solve some problems.
+
+GitHub is a perfect tool talking about code projects. Because we can have different
+longtime versions of the same file. 
+
+To resolve pull request conflicts:
+-Merge on github one of the pull request.
+-Pull it to local, so that origin/master has the same
+	state as the local master:
+	Alternative:
+	git fetch origin master
+	git merge origin/master master
+
+-Checkout diff-oil branch
+-Merge master into the different-oil branch.
+	git merge different-oil master
+-Push the branche into the remote.
+-Pull to stay up to date.
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+
+When 2 collaborators are working in the same file, or we want the specific authorization
+from a collaborator to update the master branch, it's a good idea to create pull request
+through branches, so that we can avoid conflict problems.
