@@ -8,6 +8,8 @@ steps:
 1. Create a remote:  git remote add origin URL
 2. Push the commits: git push origin master
 
+To add collaborators on github:
+Go to the settings in the repo, then collaborator, add.
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
@@ -18,4 +20,35 @@ Describe the differences between forks, clones, and branches. When would you use
 Clone generates the same content from a repository into another 
 directory. This could be local or from GitHub to Local.
 Forke clones from GitHub to GitHub.
-Brnach could be local or in GitHub. It's goal is to work in a parallel process from a commit. 
+Branch could be local or in GitHub. It's goal is to work in a parallel process from a commit. 
+
+COLLABORATORS:
+Conflict.
+This happen when the local mster and the master on github
+have added a new commit, the we should merge both commits.
+If the changes are in the same part of code, then there will
+bw a conflict.
+
+Git fetch update the origin/master branch with the content of
+the master branch of github.
+Thats why git pull is equivalent to git getch + git merge.
+
+Fast forward merges don't create a 2 commits because it considers
+that one commit is the ancestor (reachable) of one another.
+In the case of git pull, the ancestor or common branch is the
+origin/master.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+We can work off line without merging the changes from github.
+So Fetch is a good option. We can know the state of the last
+common commit between github and local directory.
+
+PULL REQUEST.
+-Create a new branch.
+-Modify the file(s).
+-Create a commit.
+-Push the new branch into the remote.
+-Create a pull request on GitHub.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
